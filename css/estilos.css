@@ -1,0 +1,28 @@
+#calculo_1{
+    font-family: arial;
+    margin-left: 10%;    
+
+}
+
+input{
+    width: 80px;
+    border-color: rgb(31, 226, 240);
+    border-radius: 10px;
+}
+
+
+#calculo_1 h1{
+    font-size: 25px;
+}
+
+#calculo_1 h2{
+    font-size: 20px;
+}
+
+
+button{
+    background-color: rgb(25, 119, 173);;
+    color: white;
+    width: 300px;
+}
+

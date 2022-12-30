@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins' ;
+}
+.muro_1{
+    font-size: 150%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.muro_2{
+    font-size: 100%;
+    margin-top: 3%;
+    margin-left: 13%;
+}
+
+.muros{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    margin: 30px;
+}
+.bot_ac{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot_mu1{ 
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    background: rgb(91, 146, 247) ;
+ }
+ .bot_mu1:hover{
+     width: 120px;
+     height: 40px;
+     transition: 0.4s;
+     color: white;
+     background: rgb(129, 9, 9);
+ }
+ 
+ .bot_mu2{ 
+     color: white;
+     outline: none;
+     border: none;
+     border-radius: 10px;
+     width: 100px;
+     height: 35px;
+     background: rgb(0, 89, 255) ;
+  }
+ 
+  .bot_mu2:hover{
+     width: 120px;
+     height: 40px;
+     transition: 0.4s;
+     color: white;
+     background: rgb(14, 158, 33);
+ }

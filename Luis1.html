@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/stilo.css">
+  <link rel="stylesheet" href="./css/prog2.css">
+  <link rel="stylesheet" href="./css/prog1.css">
+  <title>cotizacion de productos</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(240, 240, 240);
+      color: rgb(0, 0, 0);
+      padding: 20px;
+    }
+    nav a {
+      color: rgb(110, 110, 110);
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav a:hover {
+      background-color: rgb(163, 158, 158);
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #bbbbbb;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <img src="./img/logo.png" alt="" width="70px" height="70px">
+    <a href="/index.html">inicio</a>
+    <a href="/calculadora.html">calculadora</a>
+    <a href="/asistencia.html">asistencia profecional</a>
+    <form>
+      <input type="text" placeholder="Search">
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+<hr>
+  <div class="container">
+    <div class="card">
+      <span> <input type="checkbox" name="" id=""></span>
+      <img src="./img/1.jpg" alt="" width="100px" height="100px">
+      <h3>Local de venta de alimentos</h3>
+
+    </div>
+    
+    <div class="card">
+      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="1"></span>
+      <img src="./img/2.jpg" alt="" width="100px" height="100px">
+      <h3>Baño completo</h3>
+
+    </div>
+    <div class="card">
+      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="2"></span>
+      <img src="./img/3.jpg" alt="" width="100px" height="100px">
+      <h3>Recamara</h3>
+
+    </div>
+    <div class="card">
+      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="3"></span>
+      <img src="./img/4.jpg" alt="" width="100px" height="100px">
+      <h3>Recamara con baño</h3>
+
+    </div>
+    <div class="card">
+      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="4"></span>
+      <img src="./img/4.jpg" alt="" width="100px" height="100px">
+      <h3>Estancia y Comedor</h3>
+
+    </div>
+    
+  </div>
+  <br>
+    <p>Elige donde vas a construir y obtén los precios de esa ubicación</p>
+    <p><strong>¿Dónde vas a construir?</strong></p>
+    <p>ciudad</p>
+    <div class="caja">
+    <select name="ciudad" id="">
+      <option value="quito">quito</option>
+      <option value="guayaquil">guayaquil</option>
+      <option value="cuenca">cuenca</option>
+    </select>
+  </div>
+    <br>
+    <p><strong>¿En qué lugar harás tu proyecto?</strong></p>
+    <input type="checkbox" name="" id=""> adentro <br>
+    <input type="checkbox" name="" id=""> afuera
+    <br><br>
+    <div class="bot_ac">
+      <div> <a href="./joshep.html"><button class="bot_mu1">Atras</button></div></a>
+      <div> <a href="./jonathan1.html"> <button class="bot_mu2">Resultado</button></div></a>
+    </div>  
+
+<script>
+  function comprobar(checkbox){
+    this = checkbox.parentNode.querySelector("[type=checkbox]:not(#" + checkbox.id + ")");
+ 
+    if (this.checked){
+        this.checked = false;
+    }
+}
+</script>
+</body>
+</html>

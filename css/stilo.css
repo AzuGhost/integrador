@@ -1,0 +1,44 @@
+
+.container {
+    display: flex;
+}
+.card {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    color: rgb(73, 73, 73);
+}
+h3 {
+    text-align: center;
+
+}
+button{
+    right: auto;
+}
+nav {
+    padding: auto;
+    border: 3px;
+}
+body {
+    background: rgb(255, 255, 255);
+}
+.bajo{
+    padding: 50px;
+    border-right: 0px;
+}
+.botones{
+    border: solid 1px black;
+}
+.cuerpo{
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+      
+}
