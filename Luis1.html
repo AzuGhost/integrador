@@ -71,25 +71,25 @@
     </div>
     
     <div class="card">
-      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="1"></span>
+      <span> <input onchange = "comprobar(otros)" type="checkbox" name="" id="1"></span>
       <img src="./img/2.jpg" alt="" width="100px" height="100px">
       <h3>Baño completo</h3>
 
     </div>
     <div class="card">
-      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="2"></span>
+      <span> <input onchange = "comprobar(otros)" type="checkbox" name="" id="2"></span>
       <img src="./img/3.jpg" alt="" width="100px" height="100px">
       <h3>Recamara</h3>
 
     </div>
     <div class="card">
-      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="3"></span>
+      <span> <input onchange = "comprobar(otros)" type="checkbox" name="" id="3"></span>
       <img src="./img/4.jpg" alt="" width="100px" height="100px">
       <h3>Recamara con baño</h3>
 
     </div>
     <div class="card">
-      <span> <input onchange = "comprobar(this)" type="checkbox" name="" id="4"></span>
+      <span> <input onchange = "comprobar(otros)" type="checkbox" name="" id="4"></span>
       <img src="./img/4.jpg" alt="" width="100px" height="100px">
       <h3>Estancia y Comedor</h3>
 
@@ -119,10 +119,10 @@
 
 <script>
   function comprobar(checkbox){
-    this = checkbox.parentNode.querySelector("[type=checkbox]:not(#" + checkbox.id + ")");
+    otros = checkbox.parentNode.querySelector("[type=checkbox]:not(#" + checkbox.id + ")");
  
-    if (this.checked){
-        this.checked = false;
+    if (otros.checked){
+        otros.checked = false;
     }
 }
 </script>
