@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,14 @@
   <link rel="stylesheet" href="./css/stilo.css">
   <link rel="stylesheet" href="./css/prog2.css">
   <link rel="stylesheet" href="./css/prog1.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>cotizacion de productos</title>
-  
+
   <style>
     body {
       font-family: Arial, sans-serif;
     }
+
     nav {
       display: flex;
       justify-content: space-between;
@@ -21,14 +24,17 @@
       color: rgb(0, 0, 0);
       padding: 20px;
     }
+
     nav a {
       color: rgb(110, 110, 110);
       text-decoration: none;
       padding: 10px;
     }
+
     nav a:hover {
       background-color: rgb(163, 158, 158);
     }
+
     input[type="text"] {
       width: 300px;
       padding: 12px 20px;
@@ -37,6 +43,7 @@
       border: 2px solid #ccc;
       border-radius: 4px;
     }
+
     button {
       background-color: #bbbbbb;
       color: white;
@@ -49,8 +56,9 @@
     }
   </style>
 </head>
+
 <body>
-  
+
   <nav>
     <img src="./img/logo.png" alt="" width="70px" height="70px">
     <a href="/index.html">inicio</a>
@@ -61,91 +69,207 @@
       <button type="submit">Search</button>
     </form>
   </nav>
-  
-<h2><strong>Resultado</strong></h2>
-<div class="botones">
-<input style="float: right;" type="button" value="descargar">
-<input style="float: right;" type="button" value="guardar">
-<input style="float: right;" type="button" value="compartir">
-</div>
-<br>
-<p>Construye tu local de venta de alimentos por etapas. Descarga gratis materiales, planos, costos y más</p>
-<div class="cuerpo">
-  <div>
 
-<input style="display: flexbox;" type="button" value="resumen">
-<input style="display: flexbox;" type="button" value="Materiales">
-<input style="display: flexbox;" type="button" value="costos">
-<input style="display: flexbox;" type="button" value="Planos">
-<div class="bajo">
-  <h2 ><strong>Proyecto completo</strong></h3>
-    <img src="./img/terminado.jpg" alt="" width="300px" height="300px">
-    <div>
-      <span>Materiales:    10.254,90 </span>
-      <br>
-      <span>Mano de obra:  3.250,47</span>
-      <br>
-      <span>total estimado: 13.515.23</span>
-    </div>
-</div>
-</div>
-<div>
-  <input style="display: flexbox;" type="button" value="resumen">
-  <input style="display: flexbox;" type="button" value="Materiales">
-  <input style="display: flexbox;" type="button" value="costos">
-  <input style="display: flexbox;" type="button" value="Planos">
-  <div class="bajo">
-    <h2 ><strong>Etapa 1: Ciminetos</strong></h3>
-      <img src="./img/2.jpg" alt="" width="300px" height="300px">
-      <div>
-        <span>Materiales:    10.254,90 </span>
-        <br>
-        <span>Mano de obra:  3.250,47</span>
-        <br>
-        <span>total estimado: 13.515.23</span>
-      </div>
+  <h2><strong>Resultado</strong></h2>
+  <div class="botones">
+    <input style="float: right;" type="button" value="descargar">
+    <input style="float: right;" type="button" value="guardar">
+    <input style="float: right;" type="button" value="compartir">
   </div>
-  </div>
-  <div>
- 
-    <input style="display: flexbox;" type="button" value="resumen">
-    <input style="display: flexbox;" type="button" value="Materiales">
-    <input style="display: flexbox;" type="button" value="costos">
-    <input style="display: flexbox;" type="button" value="Planos">
-    <div class="bajo">
-      <h2 ><strong>Etapa 2: Estructura </strong></h3>
-        <img src="./img/3.jpg" alt="" width="300px" height="300px">
-        <div>
-          <span>Materiales:    10.254,90 </span>
-          <br>
-          <span>Mano de obra:  3.250,47</span>
-          <br>
-          <span>total estimado: 13.515.23</span>
-        </div>
-    </div>
-    </div>
+  <br>
+  <p>Construye tu local de venta de alimentos por etapas. Descarga gratis materiales, planos, costos y más</p>
+ <!-- 
+  <div class="cuerpo">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
     <div>
- 
+
       <input style="display: flexbox;" type="button" value="resumen">
       <input style="display: flexbox;" type="button" value="Materiales">
       <input style="display: flexbox;" type="button" value="costos">
       <input style="display: flexbox;" type="button" value="Planos">
       <div class="bajo">
-        <h2 ><strong>Etapa 3: Acabados</strong></h3>
-          <img src="./img/4.jpg" alt="" width="300px" height="300px">
+        <h2><strong>Proyecto completo</strong></h3>
+          <img src="./img/terminado.jpg" alt="" width="300px" height="300px">
           <div>
-            <span>Materiales:    10.254,90 </span>
+            <span>Materiales: 10.254,90 </span>
             <br>
-            <span>Mano de obra:  3.250,47</span>
+            <span>Mano de obra: 3.250,47</span>
             <br>
             <span>total estimado: 13.515.23</span>
           </div>
       </div>
+    </div>
+    <div>
+      <input style="display: flexbox;" type="button" value="resumen">
+      <input style="display: flexbox;" type="button" value="Materiales">
+      <input style="display: flexbox;" type="button" value="costos">
+      <input style="display: flexbox;" type="button" value="Planos">
+      <div class="bajo">
+        <h2><strong>Etapa 1: Ciminetos</strong></h3>
+          <img src="./img/2.jpg" alt="" width="300px" height="300px">
+          <div>
+            <span>Materiales: 10.254,90 </span>
+            <br>
+            <span>Mano de obra: 3.250,47</span>
+            <br>
+            <span>total estimado: 13.515.23</span>
+          </div>
       </div>
+    </div>
+    <div>
+
+      <input style="display: flexbox;" type="button" value="resumen">
+      <input style="display: flexbox;" type="button" value="Materiales">
+      <input style="display: flexbox;" type="button" value="costos">
+      <input style="display: flexbox;" type="button" value="Planos">
+      <div class="bajo">
+        <h2><strong>Etapa 2: Estructura </strong></h3>
+          <img src="./img/3.jpg" alt="" width="300px" height="300px">
+          <div>
+            <span>Materiales: 10.254,90 </span>
+            <br>
+            <span>Mano de obra: 3.250,47</span>
+            <br>
+            <span>total estimado: 13.515.23</span>
+          </div>
+      </div>
+    </div>
+    <div>
+
+      <input style="display: flexbox;" type="button" value="resumen">
+      <input style="display: flexbox;" type="button" value="Materiales">
+      <input style="display: flexbox;" type="button" value="costos">
+      <input style="display: flexbox;" type="button" value="Planos">
+      <div class="bajo">
+        <h2><strong>Etapa 3: Acabados</strong></h3>
+          <img src="./img/4.jpg" alt="" width="300px" height="300px">
+          <div>
+            <span>Materiales: 10.254,90 </span>
+            <br>
+            <span>Mano de obra: 3.250,47</span>
+            <br>
+            <span>total estimado: 13.515.23</span>
+          </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <div class="container">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-container mySwiper">
+     
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <input style="display: flexbox;" type="button" value="resumen">
+              <input style="display: flexbox;" type="button" value="Materiales">
+              <input style="display: flexbox;" type="button" value="costos">
+              <input style="display: flexbox;" type="button" value="Planos">
+              <p><strong>ETAPA:1 Ciminetos</strong></p>
+                <img src="./img/2.jpg"
+                    alt="">
+                <div class="card-description">
+                    <div class="card-title">
+                        <h4>Descripción</h4>
+                    </div>
+                    <div class="card-text">
+                      <span>Materiales: 800.50 </span>
+                      <br>
+                      <span>Mano de obra: 500.00</span>
+                      <br>
+                      <span>total estimado: 13000.00</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+              <input style="display: flexbox;" type="button" value="resumen">
+              <input style="display: flexbox;" type="button" value="Materiales">
+              <input style="display: flexbox;" type="button" value="costos">
+              <input style="display: flexbox;" type="button" value="Planos">
+              <p><strong>ETAPA:2 Estructura</strong></p>
+                <img src="./img/3.jpg"
+                    alt="">
+                <div class="card-description">
+                    <div class="card-title">
+                        <h4>Descripción</h4>
+                    </div>
+                    <div class="card-text">
+                      <span>Materiales: 10.254,90 </span>
+                      <br>
+                      <span>Mano de obra: 3.250,47</span>
+                      <br>
+                      <span>total estimado: 13.515.23</span>
+                    </div>
+                    
+                </div>
+        </div>
+            <div class="swiper-slide">
+                <input style="display: flexbox;" type="button" value="resumen">
+                <input style="display: flexbox;" type="button" value="Materiales">
+                <input style="display: flexbox;" type="button" value="costos">
+                <input style="display: flexbox;" type="button" value="Planos">
+                <p><strong>ETAPA:3 Acabados</strong></p>
+                  <img src="./img/4.jpg"
+                      alt="">
+                  <div class="card-description">
+                      <div class="card-title">
+                          <h4>Descripción</h4>
+                      </div>
+                      <div class="card-text">
+                        <span>Materiales: 10.254,90 </span>
+                        <br>
+                        <span>Mano de obra: 3.250,47</span>
+                        <br>
+                        <span>total estimado: 13.515.23</span>
+                      </div>
+                      
+                  </div>
+        </div>
+            <div class="swiper-slide">
+              <input style="display: flexbox;" type="button" value="resumen">
+              <input style="display: flexbox;" type="button" value="Materiales">
+              <input style="display: flexbox;" type="button" value="costos">
+              <input style="display: flexbox;" type="button" value="Planos">
+              <p><strong>Proyecto Completado</strong></p>
+                <img src="./img/terminado.jpg"
+                    alt="">
+                <div class="card-description">
+                    <div class="card-title">
+                        <h4>Descripción</h4>
+                    </div>
+                    <div class="card-text">
+                      <span>Materiales: 10.254,90 </span>
+                      <br>
+                      <span>Mano de obra: 3.250,47</span>
+                      <br>
+                      <span>total estimado: 13.515.23</span>
+                    </div>
+                    
+                </div>
+        </div>
+            
+           
+
+            </div>
+   
+        </div>
+     
+     
+
+    </div>
+
 </div>
-<div class="bot_ac">
-  <div> <a href="./jonathan1.html"><button class="bot_mu1">Atras</button></div></a>
-  <div> <a href=""> <button class="bot_mu2">Resultado</button></div></a>
-</div>  
+<!-- Swiper JS -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./python_luis/app.js"></script>
+  <div class="bot_ac">
+    <div> <a href="./jonathan1.html"><button class="bot_mu1">Atras</button></div></a>
+    <div> <a href=""> <button class="bot_mu2">Resultado</button></div></a>
+  </div>
 </body>
+
 </html>
